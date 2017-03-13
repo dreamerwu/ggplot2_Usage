@@ -1,0 +1,7 @@
+scale_x_discrete(limits=c("group1","group2","group3"))  # to change the order of variables
+
+
+
+
+
+
