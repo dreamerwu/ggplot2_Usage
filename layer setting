@@ -1,0 +1,14 @@
++facet_grid(. ~ factor)  #add multi panel in one figure
+
+
+
+
+
+
+
+
+
+
+
+
+
