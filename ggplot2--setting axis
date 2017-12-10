@@ -3,3 +3,8 @@
 +theme(axis.text=element_text(size?),axis.title=element_text(size=?))   #setting text size in x & y axis
 
 
+##change colour manually
++scale_color_manual(values=c("black","green","blue"))
+
+
+
