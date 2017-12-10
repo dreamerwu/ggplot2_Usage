@@ -7,4 +7,9 @@
 +scale_color_manual(values=c("black","green","blue"))
 
 
+# using lm to plot line
+geom_smooth(method="lm",se=FALSE,size=2,color="blue")
+cor.test(x,y,method=c("pearson","spearman"))
+
+
 
