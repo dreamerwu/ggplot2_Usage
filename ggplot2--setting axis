@@ -10,6 +10,10 @@
 # using lm to plot line
 geom_smooth(method="lm",se=FALSE,size=2,color="blue")
 cor.test(x,y,method=c("pearson","spearman"))
-
-
+#add vertival line
+geom_vline(xintercept=0,color="blue",size=1)
+#add horizental line
+geom_hline(yintercept=0,color="blue",size=1)
+#plot density for different group
+qplot(YAP1,data=data2,geom="density",fill=TISSUE,alpha=I(.5))
 
