@@ -1,7 +1,12 @@
 +facet_grid(. ~ factor)  #add multi panel in one figure
 
 
-
+#plot multiple gene expression
+library("ggplot2")
+data=read.delim("D:/demo/demo.txt",head=T,sep="\t")
+ls(data)
+p=ggplot(data,aes(x=Group,y=expression,color=Group))+geom_boxplot()+geom_jitter(size=2)+theme_bw()
+p+facet_grid(.~gene)
 
 
 
