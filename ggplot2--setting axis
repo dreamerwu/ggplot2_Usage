@@ -2,6 +2,11 @@
 +coord_fixed(ratio=1/2)  #setting the ratio of x axis and y axis
 +theme(axis.text=element_text(size?),axis.title=element_text(size=?))   #setting text size in x & y axis
 
+#plot the original order
+data$group=factor(data$group,levels=data$group)
+
+
+
 
 ##change colour manually
 +scale_color_manual(values=c("black","green","blue"))
