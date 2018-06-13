@@ -5,11 +5,11 @@
 #plot the original order
 data$group=factor(data$group,levels=data$group)
 
-
-
-
 ##change colour manually
 +scale_color_manual(values=c("black","green","blue"))
+
+#modify axis title
+p + labs(x = "New x label")
 
 
 # using lm to plot line
