@@ -11,14 +11,16 @@ data$group=factor(data$group,levels=data$group)
 #modify axis title
 p + labs(x = "New x label")
 
+#add text
+p+annotate("text",lable="pvalue=0.01",x=4,y=4,color="black")
 
 # using lm to plot line
 geom_smooth(method="lm",se=FALSE,size=2,color="blue")
 cor.test(x,y,method=c("pearson","spearman"))
 #add vertival line
-geom_vline(xintercept=0,color="blue",size=1)
+geom_vline(xintercept=0,color="blue",size=1,linetype="dashed)
 #add horizental line
-geom_hline(yintercept=0,color="blue",size=1)
+geom_hline(yintercept=0,color="blue",size=1,linetype="dashed)
 #plot density for different group
 qplot(YAP1,data=data2,geom="density",fill=TISSUE,alpha=I(.5))
 
