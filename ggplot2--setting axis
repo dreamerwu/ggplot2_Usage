@@ -14,6 +14,12 @@ data$group=factor(data$group,levels=data$group)
 #modify axis title
 p + labs(x = "New x label")
 
+#add ggplot title
++ggtitle("xxxxxxx")
+
+# set axis range
++ylim(xx,yy)+xlim(XX,YY)
+
 #add text
 p+annotate("text",lable="pvalue=0.01",x=4,y=4,color="black")
 
