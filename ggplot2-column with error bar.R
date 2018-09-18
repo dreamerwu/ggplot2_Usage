@@ -29,17 +29,16 @@ library(ggplot2)
 # Default bar plot
 input2$group=factor(input2$group,levels=c("DMSO","Brequinar"))
 p<- ggplot(input2, aes(x=gene, y=expression,fill=group)) + 
-    theme_bw()+
     scale_fill_manual(values=c("gray","red"))+
     geom_bar(stat="identity", color="black", 
              position=position_dodge()) +
     geom_errorbar(aes(ymin=expression-sd, ymax=expression+sd), width=.2,
                   position=position_dodge(.9)) 
-print(p)
 # Finished bar plot
-p+labs( x="gene name", y = "relative expression")+
-    theme_classic() +
-    scale_fill_manual(values=c('#999999','#E69F00'))
+result=p+labs( x="gene name", y = "relative expression")+
+    theme(axis.text=element_text(size=10),axis.title=element_text(size=10))+
+    theme_classic() 
+ggsave("input2.tiff",dpi=600,units=c("cm"),height=3.5,width=5.5)
 
 
 
