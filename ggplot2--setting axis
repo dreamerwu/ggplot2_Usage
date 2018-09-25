@@ -5,6 +5,9 @@ scale(x)
 +coord_fixed(ratio=1/2)  #setting the ratio of x axis and y axis
 +theme(axis.text=element_text(size?),axis.title=element_text(size=?))   #setting text size in x & y axis
 
+# rotate x and y
++ coord_flip()
+
 #plot the original order
 data$group=factor(data$group,levels=data$group)
 
