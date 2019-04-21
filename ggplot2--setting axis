@@ -29,6 +29,10 @@ p+annotate("text",lable="pvalue=0.01",x=4,y=4,color="black")
 #remove x/y-axis title/text/ticks
 p+theme(axis.title/text/ticks.x/y=element_blank())
 
+#modification of legend
+p+theme(legend.title=element_blank()) # remove only the legend title
+p+theme(legend.position='none/bottom') #remove the plot legend/put it on the bottom
+
 # using lm to plot line
 geom_smooth(method="lm",se=FALSE,size=2,color="blue")
 cor.test(x,y,method=c("pearson","spearman"))
