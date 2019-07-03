@@ -23,6 +23,9 @@ p + labs(x = "New x label")
 # set axis range
 +ylim(xx,yy)+xlim(XX,YY)
 
+# set axis range and interval
++scale_x(y)_continuous(breaks=seq(initial,end,interval))
+
 #add text
 p+annotate("text",lable="pvalue=0.01",x=4,y=4,color="black")
 
