@@ -16,6 +16,10 @@ data$group=factor(data$group,levels=data$group)
 
 #modify axis title
 p + labs(x = "New x label")
+p + labs(title="title name",subtitle="subtitle name")
+
+#title in multiple lines
+p + labs(subtitle="first_line\nsecond_line\nthird_line\nother_line")
 
 #add ggplot title
 +ggtitle("xxxxxxx")
