@@ -36,6 +36,9 @@ p+annotate("text",lable="pvalue=0.01",x=4,y=4,color="black")
 #remove x/y-axis title/text/ticks
 p+theme(axis.title/text/ticks.x/y=element_blank())
 
+#change text size
+p + theme(plot.subtitle/title=element_text(size=),axis.title.x=element_text(size=10),axis.title.y=element_text(size=10),axis.text.x=element_text(size=10),axis.text.y=element_text(size=10),legend.title=element_text(size=10),legend.text=element_text(size=10))
+
 #modification of legend
 p+theme(legend.title=element_blank()) # remove only the legend title
 p+theme(legend.position='none/bottom') #remove the plot legend/put it on the bottom
