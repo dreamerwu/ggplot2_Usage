@@ -8,6 +8,9 @@ scale(x)
 # rotate x and y
 + coord_flip()
 
+# x axis text 90 degree rotation
++theme(axis.text.x=element_text(angle=90,hjust=1))
+
 #plot the original order
 data$group=factor(data$group,levels=data$group)
 
