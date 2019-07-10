@@ -24,6 +24,9 @@ p + labs(title="title name",subtitle="subtitle name")
 #title in multiple lines
 p + labs(subtitle="first_line\nsecond_line\nthird_line\nother_line")
 
+#change axis label
+p+labs(x="",y="")
+
 #add ggplot title
 +ggtitle("xxxxxxx")
 
