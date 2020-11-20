@@ -8,6 +8,11 @@ scale(x)
 #transform x/y axis scale
 +scale_x_log10()
 
+#Plot multiple figures by variable
++facet_wrap (~variable)
+#variable order
+level(data$variable)=c("order1","order2","order3")
+
 # rotate x and y
 + coord_flip()
 
