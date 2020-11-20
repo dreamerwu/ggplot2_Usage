@@ -10,7 +10,7 @@ scale(x)
 
 #Plot multiple figures by variable
 +facet_wrap (~variable)
-#variable order
+#name the variable
 level(data$variable)=c("order1","order2","order3")
 
 # rotate x and y
