@@ -3,7 +3,10 @@ scale(x)
 
 +scale_x_discrete(limits=c("group1","group2","group3"))  # to change the order of variables
 +coord_fixed(ratio=1/2)  #setting the ratio of x axis and y axis
-+theme(axis.text=element_text(size?),axis.title=element_text(size=?))   #setting text size in x & y axis
+
+#change text size
+p + theme(plot.subtitle/title=element_text(size=),axis.title.x=element_text(size=10),axis.title.y=element_text(size=10),axis.text.x=element_text(size=10),axis.text.y=element_text(size=10),legend.title=element_text(size=10),legend.text=element_text(size=10))
++theme(axis.text=elemet_text(size?),axis.title=element_text(size=?))   #setting text size in x & y axis
 
 #transform x/y axis scale
 +scale_x_log10()
@@ -50,8 +53,6 @@ p+annotate("text",lable="pvalue=0.01",x=4,y=4,color="black")
 #remove x/y-axis title/text/ticks
 p+theme(axis.title/text/ticks.x/y=element_blank())
 
-#change text size
-p + theme(plot.subtitle/title=element_text(size=),axis.title.x=element_text(size=10),axis.title.y=element_text(size=10),axis.text.x=element_text(size=10),axis.text.y=element_text(size=10),legend.title=element_text(size=10),legend.text=element_text(size=10))
 
 #modification of legend
 p+theme(legend.title=element_blank()) # remove only the legend title
