@@ -6,7 +6,7 @@ scale(x)
 
 #change text size
 p + theme(plot.subtitle/title=element_text(size=),axis.title.x=element_text(size=10),axis.title.y=element_text(size=10),axis.text.x=element_text(size=10),axis.text.y=element_text(size=10),legend.title=element_text(size=10),legend.text=element_text(size=10))
-+theme(axis.text=elemet_text(size?),axis.title=element_text(size=?))   #setting text size in x & y axis
++theme(axis.text=element_text(size?),axis.title=element_text(size=?))   #setting text size in x & y axis
 
 #transform x/y axis scale
 +scale_x_log10()
